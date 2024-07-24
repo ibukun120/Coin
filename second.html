@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="pop" class="pop bg-orange-500 p-8">This is main div</div>
+  <button class="bg-green-300 p-3" onclick="hideShow()">Click here</button>
+
+
+  <script>
+
+
+  var div = document.getElementById('pop');
+  var display = 0;
+
+function hideShow(){
+      if (display == 1){
+        div.style.display = 'block';
+        display = 0;
+      }else{
+        div.style.display = 'none';
+        display = 1;
+      }
+    };
+  </script>
+</body>
+</html>
